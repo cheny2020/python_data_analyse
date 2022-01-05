@@ -27,7 +27,7 @@ Make train set and test set, scale the data, plot confusion matrix of the predic
 Models used : Logistic regression, ridge classifier, support vector machines, random forest classifier.
 
 ### Flask API
-Transformation of the model into flask API. 
+Transformation of the model into flask API, using the logistic model as example.
 
 Save the model as pickle file, so that later to use it and call the predict function to get a prediction for the new input data. When running the logistic_api.py it first loads the created logistic pickle file. Predictions are made by passing a post JSON request to the created Flask web server which is on port 5000 by default. In logistic_api.py this request is received and a prediction is based on the already loaded prediction function of the model. It returns the prediction in JSON format.
 
